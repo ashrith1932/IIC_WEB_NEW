@@ -15,7 +15,7 @@ export default function Hero() {
     
     tl.fromTo(chars, 
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, stagger: 0.05, duration: 0.8, ease: "back.out(1.7)" }
+      { opacity: 1, y: 0, stagger: 0.2, duration: 0.8, ease: "back.out(1.7)" }
     );
 
     gsap.to(cursorRef.current, {
@@ -27,11 +27,11 @@ export default function Hero() {
     });
   }, []);
 
-  const word = "TECHNOVA'25";
+  const word = "TECHCRUNCH'25";
 
   return (
     <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-white px-6 pt-20">
-      <div className="absolute inset-0 z-0 opacity-40">
+      <div className="absolute inset-0 z-0 opacity-78">
         <SolarSystem />
       </div>
 
@@ -58,9 +58,11 @@ export default function Hero() {
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
           <ExtrudedButton text="Register Now" bgColor="#ffd93d" />
-          <button className="px-8 py-4 font-bold uppercase tracking-widest text-black border-b-2 border-black hover:bg-zinc-100 transition-colors">
+          <a className="px-8 py-4 font-bold uppercase tracking-widest text-black border-b-2 border-black hover:bg-zinc-100 transition-colors"
+             href="#schedule"
+          >
             View Schedule
-          </button>
+          </a>
         </div>
       </div>
 
