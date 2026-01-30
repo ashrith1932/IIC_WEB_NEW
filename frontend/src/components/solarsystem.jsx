@@ -63,9 +63,65 @@ export default function SolarSystem() {
     scene.add(orbitLine);
 
     let angle = 0;
+    let isDragging = false;
+
+    // Raycaster for mouse interaction
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+
+    const onMouseMove = (event) => {
+      const rect = container.getBoundingClientRect();
+      mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+      if (isDragging) {
+        raycaster.setFromCamera(mouse, camera);
+        
+        // Create a plane at y=0 to intersect with
+        const plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+        const intersectPoint = new THREE.Vector3();
+        raycaster.ray.intersectPlane(plane, intersectPoint);
+
+        if (intersectPoint) {
+          // Calculate angle from sun to intersection point
+          angle = Math.atan2(intersectPoint.z, intersectPoint.x);
+        }
+      }
+    };
+
+    const onMouseDown = (event) => {
+      const rect = container.getBoundingClientRect();
+      mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObject(planet);
+
+      if (intersects.length > 0) {
+        isDragging = true;
+        container.style.cursor = 'grabbing';
+      }
+    };
+
+    const onMouseUp = () => {
+      isDragging = false;
+      container.style.cursor = 'default';
+    };
+
+    // Add event listeners
+    container.addEventListener('mousemove', onMouseMove);
+    container.addEventListener('mousedown', onMouseDown);
+    container.addEventListener('mouseup', onMouseUp);
+    container.addEventListener('mouseleave', onMouseUp);
+
     const animate = () => {
       requestAnimationFrame(animate);
-      angle += 0.005;
+      
+      // Only auto-increment angle if not dragging
+      if (!isDragging) {
+        angle += 0.005;
+      }
+      
       planet.position.x = Math.cos(angle) * orbitRadius;
       planet.position.z = Math.sin(angle) * orbitRadius;
       planet.rotation.y += 0.02;
@@ -85,6 +141,10 @@ export default function SolarSystem() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      container.removeEventListener('mousemove', onMouseMove);
+      container.removeEventListener('mousedown', onMouseDown);
+      container.removeEventListener('mouseup', onMouseUp);
+      container.removeEventListener('mouseleave', onMouseUp);
       renderer.dispose();
       container.innerHTML = "";
     };
