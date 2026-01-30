@@ -3,7 +3,7 @@ export default function ExtrudedButton({
   onClick,
   className = "",
   bgColor = "#ffd93d",
-  depth = 6,
+  depth = 20,
 }) {
   return (
     <button
