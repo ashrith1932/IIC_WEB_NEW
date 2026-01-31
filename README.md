@@ -5,7 +5,7 @@ Designed as a **sanctuary for builders, thinkers, and creators**, the website bl
 
 it is an **interactive platform** built to scale for thousands of users, registrations, and real-time exploration of events, tracks, and schedules.
 
-> *🔗WebsiteLink*[Click here](https://iic-web-new-ashrith.vercel.app/) : 
+> *🔗WebsiteLink*  [Click here](https://iic-web-new-ashrith.vercel.app/) : 
 
 ---
 
