@@ -75,15 +75,17 @@ Each track is visually differentiated and designed for clarity at a glance.
 ## 🖼️ Site Preview
 
 <div align="center">
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/iic_web_new_1.png" alt="TechCrunch 25 Hero Section" width="900px" />
-
+<h1>TechCrunch 25 Hero Section</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/iic_web_new_1.png" alt="TechCrunch 25 Hero Section" width="800px" />
 <br /><br />
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_5.png" alt="Event Tracks" width="440px" />
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_3.png" alt="Schedule View" width="440px" />
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_2.png" alt="register model" width="440px" />
+  <h1>Event Tracks</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_5.png" alt="Event Tracks" width="800px" />
+<br /><br />
+<h1>Schedule View</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_3.png" alt="Schedule View" width="800px" />
+<br /><br />
+<h1>Register Model</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_2.png" alt="register model" width="800px" />
 
 </div>
 
