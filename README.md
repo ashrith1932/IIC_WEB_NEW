@@ -27,9 +27,11 @@ The goal:
 
 ### 🌍 Interactive 3D Solar System
 - Built using **Three.js**
+- Acts as a living background element
   > *“Updates in the next versions.”*
-  >Acts as a living background element
+  > <br>
   >Users can **click and drag planets** to interact with orbital motion
+  > <br>
   >Optimized to avoid layout shifts and canvas clipping
 
 ### 🧭 Smart Navigation System
