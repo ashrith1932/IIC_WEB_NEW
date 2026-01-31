@@ -152,7 +152,7 @@ export default function App() {
             color: navBg.includes('255, 255, 255') ? '#000' : '#fff',
           }}
         >
-          T&apos;25
+          T&apos;{new Date().getFullYear()%100}
         </div>
         <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.3em]">
           <a 
@@ -285,7 +285,7 @@ export default function App() {
         </div>
         
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-zinc-400">
-          <span>© 2025 TechCrunch MNNIT</span>
+          <span>© {new Date().getFullYear()} TechCrunch MNNIT</span>
           <span>Designed with ❤️ Tummala Ashrith Reddy</span>
           <span>tummalaashrithreddy2391@gmail.com</span>
         </div>

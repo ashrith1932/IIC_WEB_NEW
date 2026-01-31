@@ -79,7 +79,7 @@ export default function Hero() {
     });
   };
 
-  const word = "TECHCRUNCH'25";
+  const word = "TECHCRUNCH'"+new Date().getFullYear()%100;
 
   return (
     <>
@@ -104,7 +104,9 @@ export default function Hero() {
             ))}
             <span ref={cursorRef} className="ml-1 text-yellow-400">|</span>
           </h1>
-
+          <p className="mx-auto mt-8 max-w-2xl text-lg md:text-xl text-zinc-900 font-medium">
+            1st'Feb {new Date().getFullYear()} - 7th'Feb {new Date().getFullYear()}
+          </p>
           <p className="mx-auto mt-8 max-w-2xl text-lg md:text-xl text-zinc-600 font-medium">
             Dive into the future of technology with immersive workshops, high-stakes hackathons, and visionary speakers.
           </p>
