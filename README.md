@@ -3,7 +3,7 @@
 TechCrunch '25 is the official digital experience for **MNNIT Allahabad’s premier technical festival**.  
 Designed as a **sanctuary for builders, thinkers, and creators**, the website blends modern web engineering with immersive visuals to deliver a high-performance, futuristic interface.
 
-This project is not just a static event page — it is an **interactive platform** built to scale for thousands of users, registrations, and real-time exploration of events, tracks, and schedules.
+it is an **interactive platform** built to scale for thousands of users, registrations, and real-time exploration of events, tracks, and schedules.
 
 ---
 
