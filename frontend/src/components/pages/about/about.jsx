@@ -22,7 +22,7 @@ export default function About() {
             </h2>
 
             <p className="text-xl text-zinc-600 leading-relaxed mb-8">
-              TECHNOVA is more than just a tech fest. It's a sanctuary for builders,
+              TECHCRUNCH is more than just a tech fest. It's a sanctuary for builders,
               thinkers, and creators who dare to challenge the status quo.
               Join thousands of participants for a 7-day journey into the heart of innovation.
             </p>
