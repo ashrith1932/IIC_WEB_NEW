@@ -3,7 +3,9 @@
 TechCrunch '25 is the official digital experience for **MNNIT Allahabad’s premier technical festival**.  
 Designed as a **sanctuary for builders, thinkers, and creators**, the website blends modern web engineering with immersive visuals to deliver a high-performance, futuristic interface.
 
-This project is not just a static event page — it is an **interactive platform** built to scale for thousands of users, registrations, and real-time exploration of events, tracks, and schedules.
+it is an **interactive platform** built to scale for thousands of users, registrations, and real-time exploration of events, tracks, and schedules.
+
+> *🔗WebsiteLink*  [Click here](https://iic-web-new-ashrith.vercel.app/) : 
 
 ---
 
@@ -26,8 +28,11 @@ The goal:
 ### 🌍 Interactive 3D Solar System
 - Built using **Three.js**
 - Acts as a living background element
-- Users can **click and drag planets** to interact with orbital motion
-- Optimized to avoid layout shifts and canvas clipping
+  > *“Updates in the next versions.”*
+  > <br>
+  >Users can **click and drag planets** to interact with orbital motion
+  > <br>
+  >Optimized to avoid layout shifts and canvas clipping
 
 ### 🧭 Smart Navigation System
 - Scroll-aware navbar:
@@ -75,15 +80,17 @@ Each track is visually differentiated and designed for clarity at a glance.
 ## 🖼️ Site Preview
 
 <div align="center">
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/iic_web_new_1.png" alt="TechCrunch 25 Hero Section" width="900px" />
-
+<h1>TechCrunch 25 Hero Section</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/iic_web_new_1.png" alt="TechCrunch 25 Hero Section" width="800px" />
 <br /><br />
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_5.png" alt="Event Tracks" width="440px" />
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_3.png" alt="Schedule View" width="440px" />
-
-<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_2.png" alt="register model" width="440px" />
+  <h1>Event Tracks</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_5.png" alt="Event Tracks" width="800px" />
+<br /><br />
+<h1>Schedule View</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_3.png" alt="Schedule View" width="800px" />
+<br /><br />
+<h1>Register Model</h1>
+<img src="https://github.com/ashrith1932/IIC_WEB_NEW/blob/main/IIC_WEB_NEW_2.png" alt="register model" width="800px" />
 
 </div>
 
